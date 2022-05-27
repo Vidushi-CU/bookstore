@@ -51,19 +51,19 @@ const AddBook = () => {
         marginRight="auto"
         paddingTop={10}
         >
-        <FormLabel>Name</FormLabel>
+        <FormLabel sx={{fontSize:20}}>Product</FormLabel>
         <TextField value={inputs.name} onChange={handleChange} margin="normal" fullWidth variant="outlined" name="name" />
 
-        <FormLabel>Author</FormLabel>
+        <FormLabel sx={{fontSize:20}}>Seller</FormLabel>
         <TextField value={inputs.author} onChange={handleChange} margin="normal" fullWidth variant="outlined" name="author" />
 
-        <FormLabel>Description</FormLabel>
+        <FormLabel sx={{fontSize:20}}>Description/ Address and the whole Information</FormLabel>
         <TextField value={inputs.description} onChange={handleChange} margin="normal" fullWidth variant="outlined" name="description" />
 
-        <FormLabel>Price</FormLabel>
+        <FormLabel sx={{fontSize:20}}>Price</FormLabel>
         <TextField value={inputs.price} onChange={handleChange} type={"number"} margin="normal" fullWidth variant="outlined" name="price" />
 
-        <FormLabel>Image url</FormLabel>
+        <FormLabel sx={{fontSize:20}}>Product Image</FormLabel>
         <TextField value={inputs.image } onChange={handleChange} margin="normal" fullWidth variant="outlined" name="image" />
 
         <FormControlLabel control={<Checkbox checked={checked} onChange={()=>setChecked(!checked)} />} label="Available in the Stock" />
